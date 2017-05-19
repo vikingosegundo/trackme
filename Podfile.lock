@@ -1,0 +1,28 @@
+PODS:
+  - Nimble (6.1.0)
+  - Quick (1.1.0)
+  - TaCoPopulator (0.1.5)
+
+DEPENDENCIES:
+  - Nimble (~> 6.0)
+  - Quick (~> 1.1)
+  - TaCoPopulator (from `https://gitlab.com/vikingosegundo/TaCoPopulator.git`, tag `0.1.5`)
+
+EXTERNAL SOURCES:
+  TaCoPopulator:
+    :git: https://gitlab.com/vikingosegundo/TaCoPopulator.git
+    :tag: 0.1.5
+
+CHECKOUT OPTIONS:
+  TaCoPopulator:
+    :git: https://gitlab.com/vikingosegundo/TaCoPopulator.git
+    :tag: 0.1.5
+
+SPEC CHECKSUMS:
+  Nimble: c53e6903fee94041b90ded74f135820437d8bf59
+  Quick: dafc587e21eed9f4cab3249b9f9015b0b7a7f71d
+  TaCoPopulator: 938fe23fb977851af5f31914a4c35185e7531511
+
+PODFILE CHECKSUM: 5ee37459cc25f5a6bf7ea2d85431e2256c114aa0
+
+COCOAPODS: 1.1.1

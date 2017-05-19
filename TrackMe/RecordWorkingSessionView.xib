@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="RecordWorkingSessionView" customModule="TrackMe" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="90"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="V7w-PH-8Dc">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="90"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V5I-mj-edT">
+                            <rect key="frame" x="20" y="62" width="334" height="21"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="21" id="RNe-H8-kwD"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VAh-Yr-z8W">
+                            <rect key="frame" x="20" y="0.0" width="334" height="90"/>
+                            <inset key="titleEdgeInsets" minX="0.0" minY="-8" maxX="0.0" maxY="0.0"/>
+                            <state key="normal" title="Button"/>
+                            <connections>
+                                <action selector="recordButtonTapped:" destination="iN0-l3-epB" eventType="touchUpInside" id="ewF-T8-V3l"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="VAh-Yr-z8W" firstAttribute="top" secondItem="V7w-PH-8Dc" secondAttribute="top" id="1gY-GN-EY2"/>
+                        <constraint firstAttribute="bottom" secondItem="VAh-Yr-z8W" secondAttribute="bottom" id="6C7-L2-6aa"/>
+                        <constraint firstItem="VAh-Yr-z8W" firstAttribute="leading" secondItem="V7w-PH-8Dc" secondAttribute="leading" constant="20" id="Adq-pQ-08q"/>
+                        <constraint firstAttribute="trailing" secondItem="V5I-mj-edT" secondAttribute="trailing" constant="21" id="HhT-1G-bQv"/>
+                        <constraint firstItem="V5I-mj-edT" firstAttribute="leading" secondItem="V7w-PH-8Dc" secondAttribute="leading" constant="20" id="OQ6-95-dhE"/>
+                        <constraint firstAttribute="trailing" secondItem="VAh-Yr-z8W" secondAttribute="trailing" constant="21" id="bmR-YF-jEn"/>
+                        <constraint firstAttribute="bottom" secondItem="V5I-mj-edT" secondAttribute="bottom" constant="7" id="uZ6-do-FrZ"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstItem="V7w-PH-8Dc" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="8Ik-J8-194"/>
+                <constraint firstAttribute="trailing" secondItem="V7w-PH-8Dc" secondAttribute="trailing" id="9l1-35-NU3"/>
+                <constraint firstAttribute="bottom" secondItem="V7w-PH-8Dc" secondAttribute="bottom" id="B6W-d5-le1"/>
+                <constraint firstItem="V7w-PH-8Dc" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="mX9-vy-afp"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="contentView" destination="V7w-PH-8Dc" id="KNl-19-xOG"/>
+                <outlet property="duration" destination="V5I-mj-edT" id="Afo-Wr-TDS"/>
+                <outlet property="recordButton" destination="VAh-Yr-z8W" id="rap-4a-WrX"/>
+            </connections>
+            <point key="canvasLocation" x="33.5" y="-234"/>
+        </view>
+    </objects>
+</document>
